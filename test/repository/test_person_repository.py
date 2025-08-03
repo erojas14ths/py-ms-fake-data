@@ -29,13 +29,13 @@ class MyTestCase(unittest.TestCase):
     def test_find_all(self):
         size = 10
         genre = GenreEnum.male
-        result = find_all(10, genre)
+        result = find_all(size, genre)
         self.assertEqual(len(result), size)
 
     def test_find_all_unique(self):
         size = 10
         genre = GenreEnum.male
-        result = find_all_unique(10, genre)
+        result = find_all_unique(size, genre)
         self.assertEqual(len(result), size)
 
     def test_find_all_unique_error(self):

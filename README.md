@@ -69,14 +69,28 @@ pytest
 ```
 ### cURL
 
-I. Person:
+#### Person
+
+I. Get One:
 
 ```bash
 curl -s 'localhost:8080/person' | jq
 ```
 
-II. Persons:
+II. Get all:
 
 ```bash
 curl -s 'localhost:8080/persons?size=1000&unique=true' | jq length
 ```
+#### Address
+
+I. Get One:
+
+```bash
+curl -s 'localhost:8080/address' | jq
+```
+
+II. Get all:
+
+```bash
+curl -s 'localhost:8080/addresses?size=1000' | jq length

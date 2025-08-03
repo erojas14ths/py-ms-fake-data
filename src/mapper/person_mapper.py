@@ -1,7 +1,6 @@
 from faker import Faker
 from faker.exceptions import UniquenessException
 
-from src.constants.fake_constants import GENRE_MALE, GENRE_FEMALE
 from src.enums.genre_enum import GenreEnum
 from src.exceptions.base_generic_exception import FakerUniqueValuesException
 from src.model.person import Person
