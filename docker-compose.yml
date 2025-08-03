@@ -1,0 +1,8 @@
+services:
+  ms-fake-data:
+    container_name: ms-fake-data
+    image: ms-fake-data:latest
+    build:
+      context: .
+    ports:
+      - "8080:8000"
