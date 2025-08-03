@@ -5,6 +5,5 @@ class Person(BaseModel):
     id: str
     first_name: str
     last_name: str
-    email: str
-    job: str
-    phone_number: str
+    name: str
+    genre: str

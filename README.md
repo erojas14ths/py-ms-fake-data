@@ -30,10 +30,13 @@ Install the following requirements:
 3. **Install the module uvicorn**:
     - Verify the installation by running `pip install uvicorn` at the terminal.
     - For Windows use `python -m pip install uvicorn` at the terminal.
-3. **Install the module fastapi**:
+4. **Install the module fastapi**:
     - Verify the installation by running `pip install fastapi` at the terminal.
     - For Windows use `python -m pip install fastapi` at the terminal.
-3. **Install the module Faker**:
+5. **Install the module httpx**:
+    - Verify the installation by running `pip install httpx` at the terminal.
+    - For Windows use `python -m pip install httpx` at the terminal.
+6. **Install the module Faker**:
     - Verify the installation by running `pip install Faker` at the terminal.
     - For Windows use `python -m pip install Faker` at the terminal.
 
@@ -57,6 +60,15 @@ python main.py
 
 To run automated tests, make sure your development environment is configured correctly and use the following command:
 
+### Package
+
+I. Run package test
+
+```bash
+pytest
+```
+### cURL
+
 I. Person:
 
 ```bash
@@ -66,5 +78,5 @@ curl -s 'localhost:8080/person' | jq
 II. Persons:
 
 ```bash
-curl -s 'localhost:8080/persons?count=1000&unique=true' | jq length
+curl -s 'localhost:8080/persons?size=1000&unique=true' | jq length
 ```
