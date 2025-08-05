@@ -1,7 +1,7 @@
 services:
   ms-fake-data:
     container_name: ms-fake-data
-    image: ms-fake-data:1.0.1
+    image: ms-fake-data:1.0.2
     labels:
       - "org.opencontainers.image.language=Python"
       - "org.opencontainers.image.description=REST microservice to obtain fake data with FastAPI"

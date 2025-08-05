@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Query
+from fastapi.responses import JSONResponse
 
 from src.enums.genre_enum import GenreEnum
 from src.model.address import Address
@@ -28,3 +29,8 @@ def router_find_one_address() -> Address:
 @router.get("/addresses")
 def router_find_all_address(size: int = 0) -> list[Address]:
     return find_all_address_service(size)
+
+
+@router.get("/health")
+def health():
+    return JSONResponse(content={"status": "ok"})
